@@ -1,0 +1,3208 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="f6DZWARAPRIk3J5JNgST9uBBqMscvG9uZQGNVSyP">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="theme-color" content="#0b5ea5"/>
+
+<title>Bookshop</title>
+
+<meta name="description" content="Online Bookshop!">
+<meta name="keywords" content="">
+
+<meta property="fb:app_id" content="741054266791225" />
+<meta property="og:title" content="Bookshop">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="https://bookshop.ge">
+<meta property="og:type" content="website" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+
+<meta name="twitter:title" content="Bookshop">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="https://bookshop.ge/manifest.json">
+  <link rel="shortcut icon" type="image/png" href="https://bookshop.ge/images/x-icon.png" />
+  <link rel="apple-touch-icon" href="https://bookshop.ge/images/logo/icon-192x192.png">
+  <link rel="stylesheet" type="text/css" href="https://bookshop.ge/css/main.css?v153">
+  <link rel="stylesheet" type="text/css" href="https://bookshop.ge/vendor/lightslider.css?v153">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159199090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-159199090-1');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="md-8">
+                    <nav class="nav">
+                        <a href="https://bookshop.ge/events" class="item">Events</a>
+                        <a href="https://bookshop.ge/blog" class="item">Blog</a>
+                        <a href="https://bookshop.ge/gift-cards" class="item">Gift card</a>
+                        <a href="https://bookshop.ge/category/view/oprahs-book-club" class="item text-primary" style="color: #2699fb;">Oprah's Book Club</a>
+                        <a href="https://bookshop.ge/quiz" class="item btn btn-primery btn-sm">Quiz</a>
+                    </nav>
+                </div>
+                <div class="md-4 d-flex" style="justify-content: flex-end; align-items: center;">
+                    
+                    
+                    <button class="btn btn-blank" onclick="darkLightBtn()">
+                        <svg style="vertical-align: middle; margin-right: 2px;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path style="fill:var(--text-primary);" d="M11,0V3h2V0ZM4.223,2.809,2.809,4.223,4.93,6.344,6.344,4.93Zm15.555,0L17.656,4.93,19.07,6.344l2.121-2.121ZM12,5a7,7,0,1,0,7,7A7.015,7.015,0,0,0,12,5Zm0,2a5,5,0,1,1-5,5A4.985,4.985,0,0,1,12,7ZM0,11v2H3V11Zm21,0v2h3V11ZM4.93,17.656,2.809,19.777l1.414,1.414L6.344,19.07Zm14.141,0L17.656,19.07l2.121,2.121,1.414-1.414ZM11,21v3h2V21Z"/>
+                        </svg>
+                        <span>Dark Mode</span>
+                    </button>
+                    <div class="hr-secondary"></div>
+                    <div class="aut-reg">
+                                                                        <a class="btn btn-blank" onclick="openModal(this)" data-target="loginModal" id="loginModalBtn">Log In</a>
+                                                <a href="https://bookshop.ge/user/register" class="btn btn-primery must-white">Register</a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-logo-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="md-3">
+                    <div class="logo">
+                        <a href="https://bookshop.ge">
+                            <img src="https://bookshop.ge/images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="md-6 p-relative">
+                                        <form action="https://bookshop.ge/product/search" method="get">
+                        <input type="hidden" name="_token" value="f6DZWARAPRIk3J5JNgST9uBBqMscvG9uZQGNVSyP">                        <input type="text" name="search_str" id="search_str" placeholder="Find your Product" onkeyup="liveSearch('show')" onfocus="liveSearch('show')" onfocusout="liveSearch('hide')" autocomplete="off">
+                        <button type="submit">
+                            <div class="btn-icon">
+                                <img src="https://bookshop.ge/images/icons/search.png" alt="search">
+                            </div>
+                            <span class="text must-white">Search</span>
+                        </button>
+                    </form>
+                    <div id="live-search" class="live-search">
+                        
+                    </div>
+                                    </div>
+                <div class="md-3 cart-wrap">
+                    <div class="user-cart">
+                        <div class="cart-dropdown" id="top-wishlist">
+                            <div class="cart-item" id="">
+    <img class="cart-icon" src="https://bookshop.ge/images/icons/save.png" alt="save">
+        <span class="cart-count cart-bg-primery">0</span>
+    </div>
+<div class="dropdown-content">
+    <div class="cart-dropdown-content wishlist-content-span">
+        <div class="dropdown-header">
+                                </div>
+        <div class="dropdown-total-price">
+            <h5>Subtotal <span>0 GEL</span></h5>
+        </div>
+        <div class="dropdown-footer">
+            <a href="https://bookshop.ge/user/wishlist" class="btn btn-primery must-white">View Wishlist</a>
+            <a href="https://bookshop.ge/product/basket" class="btn btn-border">Checkout</a>
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="cart-dropdown" id="cart-basket">
+                            <div class="cart-item" id="">
+    <img class="cart-icon" src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+        <span class="cart-count cart-bg-secondary">0</span>
+    </div>
+<div class="dropdown-content">
+    <div class="cart-dropdown-content basket-content-span">
+        <div class="dropdown-header">
+                        
+                    </div>
+        <div class="dropdown-total-price">
+            <h5>Subtotal <span>0 GEL</span></h5>
+        </div>
+        <div class="dropdown-footer">
+            <a href="https://bookshop.ge/product/basket" class="btn btn-primery must-white">View Basket</a>
+            <a href="https://bookshop.ge/product/basket" class="btn btn-border">Checkout</a>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-menu-area-fix">
+        <div class="header-menu-area" id="navbar">
+            <div class="container">
+                <div class="naviation align-items-center">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="dropdown">
+                                <a href="https://bookshop.ge/promotions/new" class="menu-item pl-0 ">New</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="https://bookshop.ge/promotions/bestsellers" class="menu-item ">Bestsellers</a>
+                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/fiction" class="menu-item ">Fiction</a>
+                                                                <div class="dropdown-content">
+                                    <div class="row">
+                                                                                                                        <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:mini-vintages" class="item">Mini Vintages</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:vintage-classics" class="item">Vintage Classics</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:horror" class="item">Horror</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:thriller" class="item">Thriller</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:romance" class="item">Romance</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:crime-detective" class="item">Crime &amp; Detective</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:modern-contemporary-fiction" class="item">Modern &amp; contemporary fiction</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:fantasy" class="item">Fantasy</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:harry-potter" class="item">Harry Potter</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:science-fiction" class="item">Science Fiction</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:history" class="item">History</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:politics" class="item">Politics</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:sherlock-holmes" class="item">Sherlock Holmes</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:classics" class="item">Classics</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:poetry-drama-literary-criticism" class="item">Poetry, Drama &amp; Literary Criticism</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:game-of-thrones" class="item">Game of Thrones</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:collectors-library" class="item">Collector&#039;s Library</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:hogwarts-house-edition" class="item">Hogwarts House Edition</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:graphic-novels-manga" class="item">Graphic Novels &amp; Manga</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:japanese-authors" class="item">Japanese Authors</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:film-tie-in" class="item">Film tie-in</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:favourite-horror" class="item">Favourite horror </a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:heartbrokens-club" class="item">Heartbroken&#039;s club </a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:popular-movies" class="item">Popular movies </a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:empowering-women-around-the-world" class="item">Empowering women around the world</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:vintage-deco" class="item">Vintage Deco</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:new-heroines" class="item">New Heroines</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:everymans-library-pocket-poets" class="item">Everyman’s Library Pocket Poets</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/fiction:summer-reads" class="item">Summer Reads</a>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/non-fiction" class="menu-item ">Non-Fiction</a>
+                                                                <div class="dropdown-content">
+                                    <div class="row">
+                                                                                                                        <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:history" class="item">History</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:little-black-classics" class="item">Little Black Classics</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:humour-collections-anthologies" class="item">Humour collections &amp; anthologies</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:hobbies-quiz-books-games" class="item">Hobbies, quiz books &amp; games</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:health-lifestyle" class="item">Health &amp; Lifestyle</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:assertiveness-motivation-self-esteem" class="item">Assertiveness, motivation &amp; self-esteem</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:politics" class="item">Politics</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:other" class="item">Other</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:computing-internet" class="item">Computing &amp; Internet</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:philosophy" class="item">Philosophy</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:food-drink" class="item">Food &amp; Drink</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:language-body-and-spirit" class="item">Language, Body and Spirit</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:true-stories-wwii" class="item">True Stories &amp; WWII</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:language-reference" class="item">Language &amp; Reference</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:business-bio" class="item">Business &amp; Bio</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:self-help" class="item">Self help</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:good-stories-are-ahead" class="item">Good stories are ahead</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:more-than-just-book" class="item">More than Just book</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:every-book-counts" class="item">Every book Counts</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:give-more-out-of-life" class="item">Give more out of life</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/non-fiction:book-trust" class="item">Book Trust</a>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/childrens" class="menu-item ">Children&#039;s</a>
+                                                                <div class="dropdown-content">
+                                    <div class="row">
+                                                                                                                        <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/childrens:teenage" class="item">Teenage</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/childrens:5-to-8" class="item">5 to 8</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/childrens:9-to-12" class="item">9 to 12</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/childrens:baby-toddler" class="item">Baby &amp; Toddler</a>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/elt" class="menu-item ">ELT</a>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/gifts-accessories" class="menu-item ">Gifts &amp; Accessories</a>
+                                                                <div class="dropdown-content">
+                                    <div class="row">
+                                                                                                                        <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:harry-potter" class="item">Harry Potter</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:game-of-thrones" class="item">Game of Thrones</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:notebook" class="item">Notebook</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:umbrellas" class="item">Umbrellas</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:bookmark" class="item">Bookmark</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:sticker" class="item">Sticker</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:pin" class="item">Pin</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:poster" class="item">Poster</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:bags" class="item">Bags</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:hoodies" class="item">Hoodies</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:t-shirts" class="item">T-shirts</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:mugs" class="item">Mugs</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:tea-and-coffee" class="item">Tea and Coffee</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:sherlock-holmes" class="item">Sherlock Holmes</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:pens-pencils" class="item">Pens &amp; Pencils</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:gift-box" class="item">Gift Box</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:postcards" class="item">Postcards</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/gifts-accessories:gifts-of-valentines-day" class="item">Gifts of Valentine’s Day</a>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/other-publishers" class="menu-item ">Other Publishers</a>
+                                                                <div class="dropdown-content">
+                                    <div class="row">
+                                                                                                                                <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/pearson-education" class="item">Pearson Education</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/cgp-books" class="item">CGP Books</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/kogan-page-ltd" class="item">Kogan Page Ltd</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/information-age-publishing" class="item">Information Age Publishing</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/cerebellum-press" class="item"> Cerebellum Press</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/scholastic" class="item">Scholastic</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/taylor-francis-ltd" class="item">Taylor &amp; Francis Ltd</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/hodder-education" class="item">Hodder Education</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/bloomsbury-publishing-plc" class="item">Bloomsbury Publishing PLC</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/john-wiley-sons-inc" class="item">John Wiley &amp; Sons Inc</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/wiley" class="item">Wiley</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/palgrave-macmillan" class="item">Palgrave MacMillan</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/welbeck-publishing-group" class="item">Welbeck Publishing Group</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/ibid-press" class="item">IBID Press</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/global-elt" class="item">GLOBAL ELT</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/cornelsen-verlag-gmbh" class="item">Cornelsen Verlag GmbH</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/garnet-publishing-ltd" class="item">Garnet Publishing Ltd</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/ib-publishing-ltd" class="item">Ib Publishing Ltd</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/rising-stars-uk-ltd" class="item">Rising Stars UK Ltd</a>
+                                            </div>
+                                                                                        <div class="md-3">
+                                                <a href="https://bookshop.ge/category/other-publishers/publisher/springer-nature" class="item">Springer Nature</a>
+                                            </div>
+                                                                                                                                                                    <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/other-publishers:international-curricula" class="item">International Curricula</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/other-publishers:other" class="item">Other</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/other-publishers:adult" class="item">Adult</a>
+                                        </div>
+                                                                                <div class="md-3">
+                                            <a href="https://bookshop.ge/category/view/other-publishers:" class="item"></a>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/category/view/other-languages" class="menu-item ">Other Languages</a>
+                                                            </li>
+                                                        <li class="dropdown">
+                                <a href="https://bookshop.ge/sales?url=sales" class="menu-item " style="color: #CB0E4E;">Sale</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="sticky-user-cart" id="stickyCart">
+                        <div class="sticky-cart-dropdown" id="sticky-wishlist">
+                            <div class="sticky-cart-item">
+    <img class="cart-icon" src="https://bookshop.ge/images/icons/save.png" alt="save">
+    </div>
+<div class="sticky-cart-dropdown-content">
+    <div class="sticky-cart-inner-dropdown-content sticky-cart-wishlist-content-span">
+        <div class="sticky-cart-dropdown-header">
+                                </div>
+        <div class="sticky-cart-dropdown-total-price">
+            <h5>Subtotal <span>0 GEL</span></h5>
+        </div>
+        <div class="sticky-cart-dropdown-footer">
+            <a href="https://bookshop.ge/user/wishlist" class="btn btn-primery sticky-cart-btn">View Wishlist</a>
+            <a href="https://bookshop.ge/product/basket" class="btn btn-border sticky-cart-btn">Checkout</a>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="sticky-cart-dropdown basket" id="sticky-basket">
+                            <div class="sticky-cart-item">
+    <img class="cart-icon" src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+        <span class="sticky-cart-count sticky-cart-bg-secondary">0</span>
+    </div>
+<div class="sticky-cart-dropdown-content">
+    <div class="sticky-cart-inner-dropdown-content sticky-cart-basket-content-span">
+        <div class="sticky-cart-dropdown-header">
+                        
+                    </div>
+        <div class="sticky-cart-dropdown-total-price">
+            <h5>Subtotal <span>0 GEL</span></h5>
+        </div>
+        <div class="sticky-cart-dropdown-footer">
+            <a href="https://bookshop.ge/product/basket" class="btn btn-primery sticky-cart-btn">View Basket</a>
+            <a href="https://bookshop.ge/product/basket" class="btn btn-border sticky-cart-btn">Checkout</a>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="mobile-header">
+        <div class="container">
+            
+
+            <div class="mobile-top-header">
+                <div class="logo">
+                    <a href="https://bookshop.ge">
+                        <img src="https://bookshop.ge/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="aut-reg">
+                                        <a href="https://bookshop.ge/user/login"  class="btn btn-blank">Log In</a>
+                    <a href="https://bookshop.ge/user/register" class="btn btn-primery must-white">Register</a>
+                                    </div>
+            </div>
+
+            
+
+            <div class="mobile-mid-header">
+                <div class="mobile-menu-content" style="width: 48%;">
+                    <button class="btn btn-blank mobile-menu-btn" onclick="showMobileNav()">
+                        <img src="https://bookshop.ge/images/icons/menu.png" alt="btn">
+                    </button>
+                </div>
+
+                <div class="d-flex" onclick="darkLightBtn()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </div>
+
+                <div class="cart-wrap">
+                    <div class="user-cart">
+                        <div class="cart-dropdown">
+                            <a href="https://bookshop.ge/user/wishlist">
+                                <div class="cart-item">
+                                    <img class="cart-icon" src="https://bookshop.ge/images/icons/save.png" alt="save">
+                                                                        <span class="cart-count cart-bg-secondary">0</span>
+                                                                    </div>
+                            </a>
+                        </div>
+                        <div class="cart-dropdown">
+                           <a href="https://bookshop.ge/product/basket">
+                                <div class="cart-item" id="">
+                                    <img class="cart-icon" src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+                                                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="main-mobile-nav" id="mobileNav" style="display: none;">
+                <ul class="menu">
+                    
+                    <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/promotions/new">New</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/promotions/bestsellers">Bestsellers</a>
+                    </li>
+
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/fiction">Fiction</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/non-fiction">Non-Fiction</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/childrens">Children&#039;s</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/elt">ELT</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/gifts-accessories">Gifts &amp; Accessories</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/other-publishers">Other Publishers</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="menu-item" href="https://bookshop.ge/category/view/other-languages">Other Languages</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a href="https://bookshop.ge/promotions/sales" class="menu-item " style="color: #CB0E4E;">Sale</a>
+                    </li>
+                    
+                </ul>
+                <nav class="nav">
+                    <a href="https://bookshop.ge/events" class="item">Events</a>
+                    <a href="https://bookshop.ge/blog" class="item">Blog</a>
+                    <a href="https://bookshop.ge/gift-cards" class="item">Gift card</a>
+                    <a href="https://bookshop.ge/category/view/oprahs-book-club" class="item" style="color: #2699fb;">Oprah's Book Club</a>
+                    <a href="https://bookshop.ge/quiz" class="item" style="color: #CB0E4E;">Quiz</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div class="carousel">
+        <div class="loader-changer">
+            <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <ul id="content-carousel" class="content-slider">
+                        <li>
+                <a href="" target="">
+                    <img class="lazy" src="https://bookshop.ge/images/prod-slider-loader.jpg" data-src="https://bookshop.ge/content/uploads/slider/slider_6514101e91da6.jpg" alt="">
+                </a>
+            </li>
+                        <li>
+                <a href="https://bookshop.ge/category/view/fiction:japanese-authors" target="">
+                    <img class="lazy" src="https://bookshop.ge/images/prod-slider-loader.jpg" data-src="https://bookshop.ge/content/uploads/slider/slider_63be63e0596c0.jpg" alt="">
+                </a>
+            </li>
+                        <li>
+                <a href="https://bookshop.ge/author/view/yuval-noah-harari" target="">
+                    <img class="lazy" src="https://bookshop.ge/images/prod-slider-loader.jpg" data-src="https://bookshop.ge/content/uploads/slider/slider_63be612fec0da.jpg" alt="">
+                </a>
+            </li>
+                        <li>
+                <a href="https://bookshop.ge/product/view/abiturientebis-mosamzadebeli-testebis-krebuli-inglisur-enashi-9789941840272" target="">
+                    <img class="lazy" src="https://bookshop.ge/images/prod-slider-loader.jpg" data-src="https://bookshop.ge/content/uploads/slider/slider_620232afec8be.jpg" alt="">
+                </a>
+            </li>
+                    </ul>
+    </div>
+
+    
+    <div class="product-wrapper mb-50">
+        <div class="container">
+            <div class="category-name">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="title">New</h2>
+                        <div class="title-hr"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more">
+                            <a href="https://bookshop.ge/promotions/new" class="btn more-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <ul class="product-slider">
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/featuring-the-short-story-that-inspired-oscar-winning-film-drive-my-car-9781784705374" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781784705374.jpg" alt="FEATURING THE SHORT STORY THAT INSPIRED OSCAR-WINNING FILM DRIVE MY CAR" title="FEATURING THE SHORT STORY THAT INSPIRED OSCAR-WINNING FILM DRIVE MY CAR">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge">New</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/featuring-the-short-story-that-inspired-oscar-winning-film-drive-my-car-9781784705374">
+            <h4 class="card-title">Men Without Women: FEATURING THE SHORT STORY THAT INSPIRED OSCAR-WINNING FILM DRIVE MY CAR</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/featuring-the-short-story-that-inspired-oscar-winning-film-drive-my-car-9781784705374">
+            <h4 class="card-title" title="Men Without Women: FEATURING THE SHORT STORY THAT INSPIRED OSCAR-WINNING FILM DRIVE MY CAR">Men Without Women: FEATURING THE SHORT STORY THAT INSPIRED OSCAR-WINNING FILM DRIVE MY CAR</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34153">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781529110685" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781529110685.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge">New</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781529110685">
+            <h4 class="card-title">On Earth We&#039;re Briefly Gorgeous</h4>
+            <span class="author">
+                                
+                Ocean Vuong
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781529110685">
+            <h4 class="card-title" title="On Earth We&#039;re Briefly Gorgeous">On Earth We&#039;re Briefly Gorgeous</h4>
+            <span class="author">
+                                
+                Ocean Vuong
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="33419">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/the-inheritance-games-vol3-9780241573631" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241573631.jpg" alt="The Inheritance Games vol.3" title="The Inheritance Games vol.3">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge">New</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/the-inheritance-games-vol3-9780241573631">
+            <h4 class="card-title">The Final Gambit: The Inheritance Games vol.3</h4>
+            <span class="author">
+                                
+                Jennifer Lynn Barnes
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/the-inheritance-games-vol3-9780241573631">
+            <h4 class="card-title" title="The Final Gambit: The Inheritance Games vol.3">The Final Gambit: The Inheritance Games vol.3</h4>
+            <span class="author">
+                                
+                Jennifer Lynn Barnes
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34517">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780241592540" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241592540.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge">New</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780241592540">
+            <h4 class="card-title">Our Crooked Hearts</h4>
+            <span class="author">
+                                
+                Melissa Albert
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780241592540">
+            <h4 class="card-title" title="Our Crooked Hearts">Our Crooked Hearts</h4>
+            <span class="author">
+                                
+                Melissa Albert
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34514">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780241480724" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241480724.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge">New</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780241480724">
+            <h4 class="card-title">The Hawthorne Legacy: (The Inheritance Games)</h4>
+            <span class="author">
+                                
+                Jennifer Lynn Barnes
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780241480724">
+            <h4 class="card-title" title="The Hawthorne Legacy: (The Inheritance Games)">The Hawthorne Legacy: (The Inheritance Games)</h4>
+            <span class="author">
+                                
+                Jennifer Lynn Barnes
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34509">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780241476178" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241476178.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge">New</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780241476178">
+            <h4 class="card-title">The Inheritance Games</h4>
+            <span class="author">
+                                
+                Jennifer Lynn Barnes
+                            </span>
+                                    <p class="price">25<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">25<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780241476178">
+            <h4 class="card-title" title="The Inheritance Games">The Inheritance Games</h4>
+            <span class="author">
+                                
+                Jennifer Lynn Barnes
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34134">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="product-wrapper mb-50">
+        <div class="container">
+            <div class="category-name">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="title">Bestsellers</h2>
+                        <div class="title-hr"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more">
+                            <a href="https://bookshop.ge/promotions/bestsellers" class="btn more-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <ul class="product-slider">
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781784876609" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781784876609.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781784876609">
+            <h4 class="card-title">Animal Farm</h4>
+            <span class="author">
+                                
+                George Orwell
+                            </span>
+                                    <p class="price">25<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">25<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781784876609">
+            <h4 class="card-title" title="Animal Farm">Animal Farm</h4>
+            <span class="author">
+                                
+                George Orwell
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34507">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780099455448" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780099455448.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780099455448">
+            <h4 class="card-title">Haruki Murakami and the Music of Words</h4>
+            <span class="author">
+                                
+                Jay Rubin
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780099455448">
+            <h4 class="card-title" title="Haruki Murakami and the Music of Words">Haruki Murakami and the Music of Words</h4>
+            <span class="author">
+                                
+                Jay Rubin
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34150">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780099540953" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780099540953.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780099540953">
+            <h4 class="card-title">The Wind-Up Bird Chronicle</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780099540953">
+            <h4 class="card-title" title="The Wind-Up Bird Chronicle">The Wind-Up Bird Chronicle</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34491">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781784707330" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781784707330.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781784707330">
+            <h4 class="card-title">Killing Commendatore</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781784707330">
+            <h4 class="card-title" title="Killing Commendatore">Killing Commendatore</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="31475">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780099481553" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780099481553.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780099481553">
+            <h4 class="card-title">Birthday Stories : Selected and Introduced by Haruki Murakami</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780099481553">
+            <h4 class="card-title" title="Birthday Stories : Selected and Introduced by Haruki Murakami">Birthday Stories : Selected and Introduced by Haruki Murakami</h4>
+            <span class="author">
+                                
+                Haruki Murakami
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="31426">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780140449334" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780140449334.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge-secondary">Out of Stock</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780140449334">
+            <h4 class="card-title">Meditations</h4>
+            <span class="author">
+                                
+                Marcus Aurelius
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780140449334">
+            <h4 class="card-title" title="Meditations">Meditations</h4>
+            <span class="author">
+                                
+                Marcus Aurelius
+                            </span>
+        </a>
+                <button class="btn add-cart-btn inactive">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="container">
+        <div class="row">
+            <div class="md-12">
+  <div class="banner-secondary mb-50">
+    <a href="" title="Main page - paper palace">
+        <div class="img">
+            <img src="https://bookshop.ge/content/uploads/banner/banner_6479dffd4a089.png" alt="Main page - paper palace">
+        </div>
+    </a>
+    
+    
+  </div>
+</div>        </div>
+    </div>
+    
+    
+        <div class="product-wrapper mb-50 " style="">
+        <div class="container">
+            <div class="category-name">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="title">Fiction</h2>
+                        <div class="title-hr"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more">
+                            <a href="https://bookshop.ge/category/view/fiction" class="btn more-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <ul class="product-slider">
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781787462144" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781787462144.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781787462144">
+            <h4 class="card-title">Daisy Jones and The Six</h4>
+            <span class="author">
+                                
+                Taylor Jenkins Reid
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781787462144">
+            <h4 class="card-title" title="Daisy Jones and The Six">Daisy Jones and The Six</h4>
+            <span class="author">
+                                
+                Taylor Jenkins Reid
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34129">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/film-tie-in-9780241395967" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241395967.jpg" alt="Film Tie-In" title="Film Tie-In">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/film-tie-in-9780241395967">
+            <h4 class="card-title">All the Bright Places: Film Tie-In</h4>
+            <span class="author">
+                                
+                Jennifer Niven
+                            </span>
+                                    <p class="price">25<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">25<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/film-tie-in-9780241395967">
+            <h4 class="card-title" title="All the Bright Places: Film Tie-In">All the Bright Places: Film Tie-In</h4>
+            <span class="author">
+                                
+                Jennifer Niven
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34130">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780241599198" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241599198.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge-secondary">Out of Stock</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780241599198">
+            <h4 class="card-title">The Summer I Turned Pretty</h4>
+            <span class="author">
+                                
+                Jenny Han
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780241599198">
+            <h4 class="card-title" title="The Summer I Turned Pretty">The Summer I Turned Pretty</h4>
+            <span class="author">
+                                
+                Jenny Han
+                            </span>
+        </a>
+                <button class="btn add-cart-btn inactive">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/tiktok-made-me-buy-it-9781804992326" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781804992326.jpg" alt="TikTok Made Me Buy It" title="TikTok Made Me Buy It">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/tiktok-made-me-buy-it-9781804992326">
+            <h4 class="card-title">The Things We Leave Unfinished: TikTok Made Me Buy It</h4>
+            <span class="author">
+                                
+                Rebecca Yarros
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/tiktok-made-me-buy-it-9781804992326">
+            <h4 class="card-title" title="The Things We Leave Unfinished: TikTok Made Me Buy It">The Things We Leave Unfinished: TikTok Made Me Buy It</h4>
+            <span class="author">
+                                
+                Rebecca Yarros
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34520">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781405946124" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781405946124.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781405946124">
+            <h4 class="card-title">This Time Tomorrow</h4>
+            <span class="author">
+                                
+                Emma Straub
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781405946124">
+            <h4 class="card-title" title="This Time Tomorrow">This Time Tomorrow</h4>
+            <span class="author">
+                                
+                Emma Straub
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34525">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781804940877" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781804940877.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781804940877">
+            <h4 class="card-title">Carrie Soto Is Back</h4>
+            <span class="author">
+                                
+                Taylor Jenkins Reid
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781804940877">
+            <h4 class="card-title" title="Carrie Soto Is Back">Carrie Soto Is Back</h4>
+            <span class="author">
+                                
+                Taylor Jenkins Reid
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34527">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781529115543" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781529115543.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781529115543">
+            <h4 class="card-title">Tomorrow, And Tomorrow, And Tomorrow</h4>
+            <span class="author">
+                                
+                Gabrielle Zevin
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781529115543">
+            <h4 class="card-title" title="Tomorrow, And Tomorrow, And Tomorrow">Tomorrow, And Tomorrow, And Tomorrow</h4>
+            <span class="author">
+                                
+                Gabrielle Zevin
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34530">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+        <div class="product-wrapper mb-50 " style="">
+        <div class="container">
+            <div class="category-name">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="title">Non-Fiction</h2>
+                        <div class="title-hr"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more">
+                            <a href="https://bookshop.ge/category/view/non-fiction" class="btn more-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <ul class="product-slider">
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780141988511" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141988511.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780141988511">
+            <h4 class="card-title">12 Rules for Life : An Antidote to Chaos</h4>
+            <span class="author">
+                                
+                Jordan B. Peterson
+                            </span>
+                                    <p class="price">41<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">41<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780141988511">
+            <h4 class="card-title" title="12 Rules for Life : An Antidote to Chaos">12 Rules for Life : An Antidote to Chaos</h4>
+            <span class="author">
+                                
+                Jordan B. Peterson
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="32841">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/12-more-rules-for-life-9780141991191" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141991191.jpg" alt="12 More Rules for Life" title="12 More Rules for Life">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/12-more-rules-for-life-9780141991191">
+            <h4 class="card-title">Beyond Order: 12 More Rules for Life</h4>
+            <span class="author">
+                                
+                Jordan B. Peterson
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/12-more-rules-for-life-9780141991191">
+            <h4 class="card-title" title="Beyond Order: 12 More Rules for Life">Beyond Order: 12 More Rules for Life</h4>
+            <span class="author">
+                                
+                Jordan B. Peterson
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34146">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/why-we-do-what-we-do-and-how-to-change-9781847946249" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781847946249.jpg" alt="Why We Do What We Do, and How to Change" title="Why We Do What We Do, and How to Change">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/why-we-do-what-we-do-and-how-to-change-9781847946249">
+            <h4 class="card-title">The Power of Habit: Why We Do What We Do, and How to Change</h4>
+            <span class="author">
+                                
+                Charles Duhigg
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/why-we-do-what-we-do-and-how-to-change-9781847946249">
+            <h4 class="card-title" title="The Power of Habit: Why We Do What We Do, and How to Change">The Power of Habit: Why We Do What We Do, and How to Change</h4>
+            <span class="author">
+                                
+                Charles Duhigg
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34158">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/the-japanese-secret-to-a-long-and-happy-life-9781786330895" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781786330895.jpg" alt="The Japanese secret to a long and happy life" title="The Japanese secret to a long and happy life">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/the-japanese-secret-to-a-long-and-happy-life-9781786330895">
+            <h4 class="card-title">Ikigai: The Japanese secret to a long and happy life</h4>
+            <span class="author">
+                                
+                Héctor García
+                                , 
+                Francesc Miralles
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/the-japanese-secret-to-a-long-and-happy-life-9781786330895">
+            <h4 class="card-title" title="Ikigai: The Japanese secret to a long and happy life">Ikigai: The Japanese secret to a long and happy life</h4>
+            <span class="author">
+                                
+                Héctor García
+                                , 
+                Francesc Miralles
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34161">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/the-1-sunday-times-bestseller-9780241251027" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241251027.jpg" alt="THE #1 SUNDAY TIMES BESTSELLER" title="THE #1 SUNDAY TIMES BESTSELLER">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/the-1-sunday-times-bestseller-9780241251027">
+            <h4 class="card-title">The Book You Wish Your Parents Had Read (and Your Children Will Be Glad That You Did): THE #1 SUNDAY TIMES BESTSELLER</h4>
+            <span class="author">
+                                
+                Philippa Perry
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/the-1-sunday-times-bestseller-9780241251027">
+            <h4 class="card-title" title="The Book You Wish Your Parents Had Read (and Your Children Will Be Glad That You Did): THE #1 SUNDAY TIMES BESTSELLER">The Book You Wish Your Parents Had Read (and Your Children Will Be Glad That You Did): THE #1 SUNDAY TIMES BESTSELLER</h4>
+            <span class="author">
+                                
+                Philippa Perry
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34506">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780241989678" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780241989678.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780241989678">
+            <h4 class="card-title">How the World Really Works</h4>
+            <span class="author">
+                                
+                Vaclav Smil
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780241989678">
+            <h4 class="card-title" title="How the World Really Works">How the World Really Works</h4>
+            <span class="author">
+                                
+                Vaclav Smil
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34519">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781802060522" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781802060522.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781802060522">
+            <h4 class="card-title">How To Prevent The Next Pandemic</h4>
+            <span class="author">
+                                
+                Bill Gates
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781802060522">
+            <h4 class="card-title" title="How To Prevent The Next Pandemic">How To Prevent The Next Pandemic</h4>
+            <span class="author">
+                                
+                Bill Gates
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34524">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780753553916" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780753553916.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780753553916">
+            <h4 class="card-title">Think Again</h4>
+            <span class="author">
+                                
+                Adam Grant
+                            </span>
+                                    <p class="price">35<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">35<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780753553916">
+            <h4 class="card-title" title="Think Again">Think Again</h4>
+            <span class="author">
+                                
+                Adam Grant
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34529">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+                    <div class="container">
+            <div class="row">
+                <div class="md-12">
+  <div class="banner-secondary mb-50">
+    <a href="" title="Main page - four thousand weeks">
+        <div class="img">
+            <img src="https://bookshop.ge/content/uploads/banner/banner_6479e03dc3db1.png" alt="Main page - four thousand weeks">
+        </div>
+    </a>
+    
+    
+  </div>
+</div>            </div>
+        </div>
+            
+        <div class="product-wrapper mb-50  bg-light-img " style=" background-image:url(https://bookshop.ge/content/uploads/category/childrens-bg.png) ">
+        <div class="container">
+            <div class="category-name">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="title">Children&#039;s</h2>
+                        <div class="title-hr"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more">
+                            <a href="https://bookshop.ge/category/view/childrens" class="btn more-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <ul class="product-slider">
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780141327792" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141327792.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780141327792">
+            <h4 class="card-title">The Happy Prince and Other Stories (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Oscar Wilde
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780141327792">
+            <h4 class="card-title" title="The Happy Prince and Other Stories (Puffin Classics)">The Happy Prince and Other Stories (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Oscar Wilde
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34469">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780141330044" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141330044.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780141330044">
+            <h4 class="card-title">The Extraordinary Cases of Sherlock Holmes (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Sir Arthur Conan Doyle
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780141330044">
+            <h4 class="card-title" title="The Extraordinary Cases of Sherlock Holmes (Puffin Classics)">The Extraordinary Cases of Sherlock Holmes (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Sir Arthur Conan Doyle
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34471">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780140383096" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780140383096.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780140383096">
+            <h4 class="card-title">The Odyssey (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Geraldine McCaughrean
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780140383096">
+            <h4 class="card-title" title="The Odyssey (Puffin Classics)">The Odyssey (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Geraldine McCaughrean
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34475">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780141321004" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141321004.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780141321004">
+            <h4 class="card-title">Treasure Island (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Robert Louis Stevenson
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780141321004">
+            <h4 class="card-title" title="Treasure Island (Puffin Classics)">Treasure Island (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Robert Louis Stevenson
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34477">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780141325293" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141325293.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780141325293">
+            <h4 class="card-title">The Jungle Book (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Rudyard Kipling
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780141325293">
+            <h4 class="card-title" title="The Jungle Book (Puffin Classics)">The Jungle Book (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Rudyard Kipling
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34486">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780141366296" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780141366296.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780141366296">
+            <h4 class="card-title">Around the World in Eighty Days (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Jules Verne
+                            </span>
+                                    <p class="price">32<sup>.50 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">32<sup>.50 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780141366296">
+            <h4 class="card-title" title="Around the World in Eighty Days (Puffin Classics)">Around the World in Eighty Days (Puffin Classics)</h4>
+            <span class="author">
+                                
+                Jules Verne
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34494">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    
+        <div class="container">
+        <div class="row">
+            <div class="md-12">
+  <div class="banner-secondary mb-50">
+    <a href="" title="Main page - oh william">
+        <div class="img">
+            <img src="https://bookshop.ge/content/uploads/banner/banner_6479e07699cbc.png" alt="Main page - oh william">
+        </div>
+    </a>
+    
+    
+  </div>
+</div>        </div>
+    </div>
+    
+    
+    
+
+    
+    <div class="product-wrapper bg-dark mb-50">
+        <div class="container">
+            <div class="category-name">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="title text-danger">Special Editions</h2>
+                        <div class="title-hr"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="more">
+                            <a href="https://bookshop.ge/category/special-editions" class="btn more-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <ul class="product-slider">
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780545791434" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780545791434.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780545791434">
+            <h4 class="card-title">Harry Potter and the Order of the Phoenix: The Illustrated Edition (Harry Potter, Book 5)</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+                                    <p class="price">189<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">189<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780545791434">
+            <h4 class="card-title" title="Harry Potter and the Order of the Phoenix: The Illustrated Edition (Harry Potter, Book 5)">Harry Potter and the Order of the Phoenix: The Illustrated Edition (Harry Potter, Book 5)</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="34439">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780545791328" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780545791328.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780545791328">
+            <h4 class="card-title">Harry Potter and the Chamber of Secrets: The Illustrated Edition</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+                                    <p class="price">189<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">189<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780545791328">
+            <h4 class="card-title" title="Harry Potter and the Chamber of Secrets: The Illustrated Edition">Harry Potter and the Chamber of Secrets: The Illustrated Edition</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="31440">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780545791342" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780545791342.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780545791342">
+            <h4 class="card-title">Harry Potter and the Prisoner of Azkaban: The Illustrated Edition</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+                                    <p class="price">189<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">189<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780545791342">
+            <h4 class="card-title" title="Harry Potter and the Prisoner of Azkaban: The Illustrated Edition">Harry Potter and the Prisoner of Azkaban: The Illustrated Edition</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="31441">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9780545791427" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9780545791427.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                                        </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9780545791427">
+            <h4 class="card-title">Harry Potter and the Goblet of Fire: The Illustrated Edition</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+                                    <p class="price">189<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">189<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9780545791427">
+            <h4 class="card-title" title="Harry Potter and the Goblet of Fire: The Illustrated Edition">Harry Potter and the Goblet of Fire: The Illustrated Edition</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+        </a>
+                <button class="btn add-cart-btn" onclick="addToCart(this)" data-id="32977">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                        <li>
+                        <div class="product-card">
+    <div class="product-header">
+        <a href="https://bookshop.ge/product/view/-9781338263893" class="img">
+            <img class="lazy" src="https://bookshop.ge/images/prod-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/9781338263893.jpg" alt="" title="">
+        </a>
+        <div class="card-basket align-items-center">
+                                    <button class="btn save-btn" data-target="loginModal" onclick="openModal(this)">
+                <img src="https://bookshop.ge/images/icons/save.png" data-src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                    <a class="badge-secondary">Out of Stock</a>
+                    </div>
+    </div>
+    <div class="product-body">
+        <a href="https://bookshop.ge/product/view/-9781338263893">
+            <h4 class="card-title">Fantastic Beasts: The Crimes of Grindelwald - The Original Screenplay</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+                                    <p class="price">85<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+    <div class="card-overlay">
+        <div class="price-row">
+                        <p class="price">85<sup>.00 GEL</sup></p>
+            <p class="price"><sup></sup></p>
+                    </div>
+        <a href="https://bookshop.ge/product/view/-9781338263893">
+            <h4 class="card-title" title="Fantastic Beasts: The Crimes of Grindelwald - The Original Screenplay">Fantastic Beasts: The Crimes of Grindelwald - The Original Screenplay</h4>
+            <span class="author">
+                                
+                J. K. Rowling
+                            </span>
+        </a>
+                <button class="btn add-cart-btn inactive">
+            <div class="img">
+                <img src="https://bookshop.ge/images/icons/cart.png" data-src="https://bookshop.ge/images/icons/cart.png" alt="cart">
+            </div>
+            <p>Add to Basket</p>
+        </button>
+            </div>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="gift-wrapper mb-50">
+        <div class="container">
+            <div class="banner" style=" background-image:url(https://bookshop.ge/content/uploads/category/category_63ee3768ec402.png) ">
+                <h2 class="banner-title">Gifts & Accessories</h2>
+                <div class="banner-hr"></div>
+                <p class="banner-text">Spot your favourite gift or accessory or<br>discover a new one, which you will love</p>
+                <a href="https://bookshop.ge/category/view/gifts-accessories" class="btn btn-blank banner-btn">BROWSE ALL</a>
+            </div>
+            <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+            <div class="gift-content">
+                <div class="row">
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-060220218" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/060220218.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-060220218">
+            <h4 class="gift-title">Margaret Atwood Hoodie Size L</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">85<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-060220211" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/060220211.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-060220211">
+            <h4 class="gift-title">Brontë Hoodie Size XL</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">85<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-060220233" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/060220233.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-060220233">
+            <h4 class="gift-title">Charles Dickens Hoodie Size L</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">85<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-060220213" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/060220213.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-060220213">
+            <h4 class="gift-title">J. R. R. Tolkien Hoodie Size M</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">85<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-060220220" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/060220220.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-060220220">
+            <h4 class="gift-title">村上 春樹 - Haruki Murakami Size  S</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">85<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-28112019137" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/28112019137.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-28112019137">
+            <h4 class="gift-title">J. K. Rowling Bag</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">29<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-28112019136" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/28112019136.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-28112019136">
+            <h4 class="gift-title">Sir Arthur Conan Doyle Bag</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">29<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-28112019135" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/28112019135.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-28112019135">
+            <h4 class="gift-title">J. R. R. Tolkien Bag</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">29<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-28112019134" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/28112019134.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-28112019134">
+            <h4 class="gift-title">Ernest Hemingway Bag</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">29<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                            <div class=" gift-item ">
+    <div class="gift-header">
+        <a href="https://bookshop.ge/product/view/-28112019133" class="gift-img">
+            <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/products/28112019133.jpg" alt="gift">
+        </a>
+        <div class="card-basket align-items-center">
+                        <button class="btn save-btn"  data-target="loginModal" onclick="openModal(this)" >
+                <img src="https://bookshop.ge/images/icons/save.png" alt="save">
+            </button>
+                                            </div>
+    </div>
+    <div class="gift-body">
+        <a href="https://bookshop.ge/product/view/-28112019133">
+            <h4 class="gift-title">Lewis Carroll Bag</h4>
+            <span class="author">English Book Education</span>
+                                    <p class="price">29<sup>.00 GEL</sup></p>
+                    </a>
+    </div>
+</div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="event-wrapper mb-50">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-name">
+                    <h2 class="title">Bookshop Events</h2>
+                    <div class="hr"></div>
+                </div>
+                <div class="more">
+                    <a href="https://bookshop.ge/events" class="btn more-btn">SEE MORE</a>
+                </div>
+            </div>
+            <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+            <div class="event-content">
+                <ul class="event-slider">
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/25" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_60c77cac217c4.png" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/25">
+            <p class="card-date">2021-06-18 19:00:00</p>
+            <p class="card-text">როგორ შევარჩიოთ ბიზნეს ლიტერატურა ინგლისურ ენაზე?</p>
+            <p class="location">14 Chavchavadze Avenue</p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/25" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/24" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_60bde96bc2b79.png" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/24">
+            <p class="card-date">2021-06-13 16:00:00</p>
+            <p class="card-text">რატომ ვიკითხოთ მხატვრული ლიტერატურა ინგლისურად</p>
+            <p class="location">bookshop - ის ბათუმის ფილიალი: ძმები ზუბალაშვილების და ბარათაშვილის ქუჩის კვეთა</p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/24" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/23" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_60a22d25cf678.png" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/23">
+            <p class="card-date">2021-05-29 15:00:00</p>
+            <p class="card-text">წიგნები და მისი როლი საზოგადოებაში</p>
+            <p class="location">bookshop - ის ბათუმის ფილიალი: ძმები ზუბალაშვილების და ბარათაშვილის ქუჩის კვეთა</p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/23" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/21" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_6077f65c299bf.jpg" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/21">
+            <p class="card-date">2021-04-23 17:00:00</p>
+            <p class="card-text">The Testaments - Book Discussion | Book Club</p>
+            <p class="location">14 Chavchavadze Avenue</p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/21" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/17" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_5f76e794028cc.png" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/17">
+            <p class="card-date">2020-10-23 19:00:00</p>
+            <p class="card-text">Book Club Event</p>
+            <p class="location">Chavchavadze Ave. 14</p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/17" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/16" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_5e84a6fa724b0.png" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/16">
+            <p class="card-date">2020-04-03 16:00:00</p>
+            <p class="card-text">The Tempest</p>
+            <p class="location"></p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/16" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                        <li>
+                        <div class="event-card">
+    <div class="event-header">
+        <a href="https://bookshop.ge/event/view/15" class="img">
+            <img class="lazy" src="https://bookshop.ge/content/uploads/event/event_5e81f20c5ad8c.png" alt="event">
+        </a>
+    </div>
+    <div class="event-body">
+        <a href="https://bookshop.ge/event/view/15">
+            <p class="card-date">2020-04-01 16:00:00</p>
+            <p class="card-text">How to write a story</p>
+            <p class="location"></p>
+        </a>
+    </div>
+    <a href="https://bookshop.ge/event/view/15" class="event-footer">
+        <div class="line"></div>
+        <p class="link">Read More</p>
+    </a>
+</div>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="blog-wrapper mb-50">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-name">
+                    <h2 class="title">Blog</h2>
+                    <div class="hr"></div>
+                </div>
+                <div class="more">
+                    <a href="https://bookshop.ge/blog" class="btn more-btn">SEE MORE</a>
+                </div>
+            </div>
+            <div class="loader-changer">
+                    <div class="ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+            <div class="blog-content">
+                <ul class="blog-slider">
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/52" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_617a60171ae4c.png" alt="Favorite Darkest Retellings – რა წავიკითხოთ ჰელოუინზე?">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/52">
+                <h4 class="card-title">Favorite Darkest Retellings – რა წავიკითხოთ ჰელოუინზე?</h4>
+                <p class="card-text">Favorite Darkest Retellings</p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/52" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/51" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_6087b32d1807d.png" alt="Wizarding World Of Harry Potter">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/51">
+                <h4 class="card-title">Wizarding World Of Harry Potter</h4>
+                <p class="card-text">by bookshop</p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/51" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/50" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_6079384e13895.png" alt="Brandon Sanderson – American Author Of Epic Fantasy">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/50">
+                <h4 class="card-title">Brandon Sanderson – American Author Of Epic Fantasy</h4>
+                <p class="card-text">by bookshop</p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/50" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/42" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_5fd37831295a6.jpg" alt="Murakami">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/42">
+                <h4 class="card-title">Murakami</h4>
+                <p class="card-text">By Lika Deisadze</p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/42" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/40" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_5f331cbfddf8c.png" alt="Mrs Dalloway">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/40">
+                <h4 class="card-title">Mrs Dalloway</h4>
+                <p class="card-text">By Virginia Woolf</p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/40" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/39" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_5f11ac614b00b.png" alt="Find Your Why">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/39">
+                <h4 class="card-title">Find Your Why</h4>
+                <p class="card-text"></p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/39" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                        <li>
+                        <div class="blog-card">
+        <div class="blog-header">
+            <a href="https://bookshop.ge/blog/view/38" class="img">
+                <img class="lazy" src="https://bookshop.ge/images/blog-loader.jpg" data-src="https://bookshop.ge/content/uploads/blog/blog_5f10506f38447.png" alt="The Infinite Game">
+            </a>
+        </div>
+        <div class="blog-body">
+            <a href="https://bookshop.ge/blog/view/38">
+                <h4 class="card-title">The Infinite Game</h4>
+                <p class="card-text"></p>
+            </a>
+        </div>
+        <a href="https://bookshop.ge/blog/view/38" class="blog-footer">
+            <div class="line"></div>
+            <p class="link">Read More</p>
+        </a>
+    </div>
+</li>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+<div class="footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="lg-3 md-12 sm-12">
+                    <a href="https://bookshop.ge/bookshops" class="footer-nav-item">Bookshops</a>
+                    <a href="https://bookshop.ge/contact-us" class="footer-nav-item">Contact us</a>
+                    <a href="https://bookshop.ge/page/useful-links" class="footer-nav-item">Useful sites</a>
+                </div>
+                <div class="lg-3 md-12 sm-12 mb-50">
+                    <a href="https://bookshop.ge/page/view/privacy-police" class="footer-nav-item">Privacy Policy</a>
+                    <a href="https://bookshop.ge/files/Terms-and-Conditions.pdf" class="footer-nav-item" target="_blank">Terms and Conditions</a>
+                    <a href="https://bookshop.ge/files/Georgia-Delivery-Options.pdf" class="footer-nav-item" target="_blank">Delivery Options</a>
+                    <a href="https://bookshop.ge/files/Gift-Cards-and-Vouchers-Terms-and-Conditions.pdf" target="_blank" class="footer-nav-item">Gift Cards and Vouchers Terms and Conditions</a>
+                </div>
+                <div class="lg-3 md-6 sm-12 mb-50">
+                    <a href="https://www.facebook.com/ebebookshop/" target="_blank" rel="noreferrer" class="social-item facebook">Facebook</a>
+                    <a href="https://www.facebook.com/ebebookshop/" target="_blank" rel="noreferrer" class="social-item twitter">Twitter</a>
+                    <a href="https://instagram.com/bookshop.ge?igshid=1gz9c1ojth4e0" target="_blank" rel="noreferrer" class="social-item instagram">Instagram</a>
+                    <a href="https://instagram.com/bookshop.ge?igshid=1gz9c1ojth4e0" target="_blank" rel="noreferrer" class="social-item youtube">Youtube</a>
+                </div>
+                <div class="lg-3 md-6 sm-12">
+                    <h4 class="footer-input-title">Subscribe</h4>
+                    <form class="footer-form" action="https://bookshop.ge/subscribe" method="POST">
+                        <input type="hidden" name="_token" value="f6DZWARAPRIk3J5JNgST9uBBqMscvG9uZQGNVSyP">                        <input type="text" placeholder="Email Address" name="subscriber_email" required>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            <div class="modal-content">
+    <div class="body-overaly" id="body-overaly" onclick="closeModal()" style="display: none;"></div>
+    <div class="login-modal modal" id="loginModal">
+        <div class="modal-content">
+            <div onclick="closeModal()" class="close-modal">
+                <span></span>
+                <span></span>
+            </div>
+            <h2 class="modal-title">Log In</h2>
+            <p class="registration-text">Not registered? <a href="https://bookshop.ge/user/register">Create an account</a></p>
+            <form method="POST" action="https://bookshop.ge/login" autocomplete="off">
+                <input type="hidden" name="_token" value="f6DZWARAPRIk3J5JNgST9uBBqMscvG9uZQGNVSyP">                                    
+                    <input type="hidden" name="previous" value="https://bookshop.ge">
+                                
+                <div class="login-page-inpt">
+                    <div class="input-icon">
+                        <img src="https://bookshop.ge/images/icons/profile.png" alt="icon">
+                    </div>
+                    <input class="input" type="email" name="email" value="" placeholder="E-Mail Address..." required autocomplete="email">
+                                    </div>
+                
+                <div class="login-page-inpt">
+                    <div class="input-icon">
+                        <img src="https://bookshop.ge/images/icons/key.png" alt="icon">
+                    </div>
+                    <input class="input" type="password" name="password" placeholder="Password" id="password" required autocomplete="current-password">
+                </div>
+                
+                <p class="send-error"><ul></ul></p>
+                <div class="row">
+                    <div class="md-8">
+                        <label class="save-password">
+                            <input type="checkbox" name="remember"  />
+                            <span class="checkmark"></span>
+                            <span class="checktext">Remember Me</span>
+                        </label>
+                        <a href="https://bookshop.ge/user/forget-password" class="forget-password">Forgot Your Password?</a>
+                    </div>
+                    <div class="md-4">
+                        <div class="sign">
+                            <button type="submit" id="loginBtns" class="btn">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+      
+  <div class="alert-content-container">
+                 <div class="container" id="alertSuccessAdd" style="display:none;">
+        <div class="message-content alert-success">
+            <button class="btn-alert-remove" style="top: 16px;" onclick="$('.alert-success').slideUp()">
+                <img src="https://bookshop.ge/images/icons/wrong.png" alt="delete">
+            </button>
+            
+            <p>Product successfully Added!</p>
+        </div>
+    </div>
+</div>
+  <div class="loading-bar" id="loadingBar" role="bar" style="transform: translate3d(-0.6%, 0px, 0px); transition: all 200ms ease 0s;"></div>
+
+
+  
+  <script type="text/javascript" src="https://bookshop.ge/js/main.js?v153"></script>
+  <script>
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+  </script>
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '552038906735635');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=552038906735635&ev=PageView&noscript=1" /></noscript>
+  
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelectorAll('a').forEach(item => {
+                item.addEventListener('click', event => {
+                    document.getElementById('loadingBar').style.width = '100%';
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
